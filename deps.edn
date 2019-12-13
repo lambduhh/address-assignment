@@ -1,0 +1,31 @@
+{:aliases
+   {:run {:jvm-opts ["-XX:-OmitStackTraceInFastThrow" "-XX:+TieredCompilation"
+                     "-XX:TieredStopAtLevel=1"]},
+    :runner
+      {:extra-deps
+         #:com.cognitect{test-runner
+                           {:git/url
+                              "https://github.com/cognitect-labs/test-runner",
+                            :sha "76568540e7f40268ad2b646110f237a60295fa3c"}},
+       :main-opts ["-m" "cognitect.test-runner" "-d" "test"]},
+    :test {:extra-deps #:org.clojure{test.check #:mvn{:version "RELEASE"}},
+           :extra-paths
+             ["test"
+              "/home/lorilynjmiller/IdeaProjects/address-assignment/test"]}},
+ :deps {clojure-complete/clojure-complete {:exclusions [org.clojure/clojure],
+                                           :mvn/version "0.2.5"},
+        cnuernber/libpython-clj {:mvn/version "1.23"},
+        nrepl/nrepl {:exclusions [org.clojure/clojure], :mvn/version "0.6.0"},
+        org.clojure/clojure #:mvn{:version "1.10.1"}},
+ :mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"},
+             "clojars" {:url "https://repo.clojars.org/"}},
+ :paths ["src"
+         "resources"
+         "dev-resources"
+         ;"/home/lorilynjmiller/IdeaProjects/address-assignment/src"
+         ;"/home/lorilynjmiller/IdeaProjects/address-assignment/dev-resources"
+         ;"/home/lorilynjmiller/IdeaProjects/address-assignment/resources"
+         "../libpython-clj/java"
+         "../libpython-clj"
+
+         ]}
