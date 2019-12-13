@@ -13,7 +13,6 @@
 (defn split-by-line [txt]
   (clojure.string/split-lines txt))
 
-
 (defn comma-separated? [txt]
   (let [chars (seq txt)]
     (= 4 (count (filter #{\,} chars)))))
@@ -31,12 +30,11 @@
   (pipe-separated? txt)
   )
 
-
 (defn line-based-dispatch-fn [line]
   (cond
-    (confusing? line) :error
     (pipe-separated? line) :pipe
     (comma-separated? line) :comma
+    (confusing? line) :error
     :else :space))
 
 (defn split-by-delimiter [string delimiter]
@@ -45,8 +43,8 @@
 
 
 (comment
-  (pipe-separated? (split-by-line pipe))
-  (split-by-line pipe)
-  (split-by-line comma)
+  (line-based-dispatch-fn (first (split-by-line spaces)))
+
+
 
   )
