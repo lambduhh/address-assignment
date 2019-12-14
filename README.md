@@ -1,14 +1,18 @@
 # address-assignment
 
-A Clojure library designed to ... well, that part is up to you.
+An assignment assigned to be completed at my address.. You could call it '*homework*'
 
 ## Usage
 
 FIXME
 
+## Assumptions
+For testing purposes I created sample data using [Mockaroo](https://mockaroo.com/).
+In the context of this assignment, the assumption has been made that tabs are equivalent
+to spaces since spaces are not offered as a delimiter option on Mockaroo.
+
 ## License
 
-Copyright © 2019 FIXME
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
