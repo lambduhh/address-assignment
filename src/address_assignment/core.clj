@@ -1,15 +1,18 @@
 (ns address-assignment.core
-  (:require [libpython-clj.python :as py]
-            ))
-#_(py/initialize! :python-home "/usr/local/bin/python3.7"
-                :library-path "")
-
-;; (py/initialize!)
-
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+  (:require [address-assignment.string-manipulation :as sm]))
 
 
+(defn s-mani [args]
+  (let [maps (map sm/list-of-maps (map slurp args))
+        all-together-now (sm/combine-all maps)]
+    all-together-now))
+
+(defn -main [& args]
+  (doseq [row (s-mani args)]
+    (println row)))
+
+(comment
+
+
+  )
 

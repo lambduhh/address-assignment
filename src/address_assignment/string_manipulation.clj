@@ -1,4 +1,4 @@
-(ns address-assignment.parse-and-sort
+(ns address-assignment.string-manipulation
   (:require [clojure.string :as str]))
 
 (def comma
@@ -80,22 +80,22 @@
     (map process-line collection-of-lines)))
 
 
-(def commatxt (list-of-maps comma))
-(def pipetxt (list-of-maps pipe))
-(def spacetxt (list-of-maps spaces))
+(defn combine-all [args]
+  (apply concat args))
 
-(defn combine-all [commatxt pipetxt spacetxt]
-  (concat commatxt pipetxt spacetxt))
-
-(def all-together-now
-  (combine-all commatxt pipetxt spacetxt))
 
 ;finally all the data together in one data structure
-all-together-now
 
 (comment
-  (process-line spaces)
-  (list-of-maps txt)
+  (def commatxt (list-of-maps comma))
+  (def pipetxt (list-of-maps pipe))
+  (def spacetxt (list-of-maps spaces))
+
+  (def all-together-now
+    (combine-all commatxt pipetxt spacetxt))
+
+  all-together-now
+
 
 
   )
