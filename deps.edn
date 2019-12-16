@@ -14,6 +14,7 @@
               "/home/lorilynjmiller/IdeaProjects/address-assignment/test"]}},
  :deps {clojure-complete/clojure-complete {:exclusions [org.clojure/clojure],
                                            :mvn/version "0.2.5"},
+        clj-time {:mvn/version "0.15.2"},
         cnuernber/libpython-clj {:mvn/version "1.27"},
         nrepl/nrepl {:exclusions [org.clojure/clojure], :mvn/version "0.6.0"},
         org.clojure/clojure #:mvn{:version "1.10.1"}},
