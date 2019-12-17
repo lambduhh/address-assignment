@@ -22,9 +22,10 @@
   (let [chars (seq txt)]
     (= 4 (count (filter #{\|} chars)))))
 
-(defn confusing? [txt]
+(defn tab-separated? [txt]
   (let [chars (seq txt)]
-    (and (comma-separated? txt) (pipe-separated? txt))))
+    (= 4 (count (filter #{\t} chars)))))
+
 
 ;test predicate functions on line
 (comment
@@ -37,8 +38,8 @@
   (cond
     (pipe-separated? line) :pipe
     (comma-separated? line) :comma
-    (confusing? line) :error
-    :else :space))
+    (tab-separated? line) :space
+    :else :error))
 
 (defmulti process-line line-based-dispatch-fn)
 
@@ -87,6 +88,8 @@
 ;finally all the data together in one data structure
 
 (comment
+
+
   (def commatxt (list-of-maps comma))
   (def pipetxt (list-of-maps pipe))
   (def spacetxt (list-of-maps spaces))
@@ -95,8 +98,6 @@
     (combine-all commatxt pipetxt spacetxt))
 
   all-together-now
-
-
 
   )
 
