@@ -76,8 +76,8 @@
 
 
 (defmethod process-line :error [line]
-  (throw (Exception. "Error in data :( check "
-                     line)))
+  (throw (Exception. (str "Error in data :( check "
+                          line))))
 
 
 ; fn to transform data into a list of hash-maps

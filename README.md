@@ -4,12 +4,15 @@ An assignment assigned to be completed at my address.. You could call it '*homew
 
 ## Usage
 
-FIXME
+FIX
 
 ## Assumptions
 For testing purposes I created sample data using [Mockaroo](https://mockaroo.com/).
 In the context of this assignment, the assumption has been made that tabs are equivalent
 to spaces since spaces are not offered as a delimiter option on Mockaroo.
+
+*Note regarding spec* **Data that included superfluous whitespace (such as: "Linda Van Bullwinkle") has been deleted
+for testing purposes. I am operating on the assumption that the data going in is good, clean, uniform data.**   
 
 ## License
 
