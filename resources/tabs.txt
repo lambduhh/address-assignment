@@ -126,7 +126,6 @@ Alasteir	Poschel	Male	Mauv	11/6/2019
 Andi	Nyssens	Female	Orange	3/3/2019
 Norman	Tolworth	Male	Turquoise	8/20/2019
 Page	Ortiga	Male	Blue	10/15/2019
-Trista	Le	Grand	6/27/2019	Female
 Florinda	Buttress	Female	Maroon	9/28/2019
 Netta	Muffin	Female	Khaki	12/18/2018
 Spence	Caban	Male	Khaki	1/26/2019
@@ -193,7 +192,6 @@ Jory	Seeborne	Male	Goldenrod	3/28/2019
 Ruben	Pickering	Male	Green	2/6/2019
 Rosaline	Daunay	Female	Purple	1/2/2019
 Douglass	Tyce	Male	Violet	11/9/2019
-Livia	Van	Der	Female	Hoog
 Gerri	Shank	Male	Yellow	2/12/2019
 Julius	McCotter	Male	Yellow	6/6/2019
 Delia	Artz	Female	Purple	11/11/2019
@@ -246,7 +244,6 @@ Myca	Boumphrey	Male	Red	12/18/2018
 Rusty	Aggs	Male	Violet	10/8/2019
 Emlen	Bencher	Male	Purple	8/10/2019
 Vinny	Wardrope	Male	Red	8/30/2019
-Arly	De	Cruz	8/4/2019	Female
 Skipp	Danielsen	Male	Mauv	2/1/2019
 Clint	Heiden	Male	Crimson	5/18/2019
 Raimund	Gulley	Male	Red	2/15/2019
@@ -358,11 +355,9 @@ Rhetta	Siemens	Female	Teal	12/21/2018
 Jerrome	Sargerson	Male	Puce	12/9/2019
 Devin	Esland	Male	Maroon	12/12/2018
 Damien	Tuckwood	Male	Teal	11/18/2019
-Aeriell	O'	Neligan	3/6/2019	Female
 Sinclair	Stonhouse	Male	Fuscia	10/25/2019
 Nikki	Yukhin	Female	Aquamarine	6/15/2019
 Niel	Dalby	Male	Orange	6/1/2019
-Natalee	Van	Bruggen	1/2/2019	Female
 Hubey	Gebhard	Male	Fuscia	5/12/2019
 Claudian	Cristoforetti	Male	Fuscia	5/16/2019
 Monty	Saltsberg	Male	Violet	2/20/2019
@@ -403,7 +398,6 @@ Nancie	McDirmid	Female	Fuscia	9/4/2019
 Rachel	Bignall	Female	Orange	2/26/2019
 Flor	Wychard	Female	Crimson	9/26/2019
 Adrienne	Tailby	Female	Purple	1/22/2019
-Merl	Van	Arsdale	3/28/2019	Female
 Devina	Bonas	Female	Aquamarine	3/6/2019
 Ajay	Fechnie	Female	Turquoise	6/23/2019
 Kaile	McDaid	Female	Purple	8/13/2019
@@ -460,7 +454,6 @@ Bearnard	Tippler	Male	Mauv	1/5/2019
 Andree	Berrill	Female	Teal	5/12/2019
 Iggie	Ronchi	Male	Khaki	4/20/2019
 Karlik	O'Garmen	Male	Goldenrod	8/21/2019
-Sutherlan	Helgass	Male	Goldenrod	12/2/2019
 Shayne	Norwell	Male	Maroon	3/16/2019
 Ariana	Gittings	Female	Aquamarine	1/14/2019
 Niven	Marc	Male	Red	5/25/2019
@@ -485,7 +478,6 @@ Kristoffer	Maliphant	Male	Maroon	10/7/2019
 Georgi	Terne	Male	Yellow	3/29/2019
 Evania	Stoddart	Female	Maroon	1/19/2019
 Emyle	Fannin	Female	Violet	6/4/2019
-Juliet	Butt	Gow	10/7/2019	Female
 Walther	Burchall	Male	Violet	9/27/2019
 Jeri	Arnet	Female	Aquamarine	1/19/2019
 Marion	Alwen	Female	Puce	1/16/2019
@@ -513,7 +505,6 @@ Darlleen	Uc	Female	Puce	11/26/2019
 Phylis	Sandall	Female	Red	4/19/2019
 Brennen	Iglesias	Male	Fuscia	8/17/2019
 Celestia	Flowerden	Female	Fuscia	4/14/2019
-Corbin	de	Lloyd	11/15/2019	Male
 Gale	Ullyatt	Female	Mauv	4/1/2019
 Betty	Dhillon	Female	Purple	9/20/2019
 Monroe	Keating	Male	Khaki	6/16/2019
@@ -607,7 +598,6 @@ Jeannine	Sparkwell	Female	Khaki	8/22/2019
 Monte	Sighart	Male	Purple	1/2/2019
 Rhianon	Louder	Female	Violet	1/16/2019
 Gladi	Brinklow	Female	Yellow	2/5/2019
-Sutherland	De	Morena	6/17/2019	Male
 Calv	Bartolini	Male	Crimson	6/16/2019
 Pauli	Tolley	Female	Khaki	3/16/2019
 Gracia	Wilsdon	Female	Maroon	10/18/2019
@@ -616,7 +606,6 @@ Maurizio	Szymonowicz	Male	Fuscia	10/14/2019
 Rochelle	Ebbing	Female	Blue	9/7/2019
 Linnet	Burnel	Female	Yellow	11/16/2019
 Morey	Slocket	Male	Red	8/15/2019
-Sergent	Van	der	Male	Kruijs
 Tobe	Sember	Male	Fuscia	9/11/2019
 Allistir	Farthing	Male	Khaki	1/25/2019
 Crystie	Dunklee	Female	Red	12/12/2018
@@ -639,7 +628,6 @@ Cy	Nellen	Male	Maroon	2/26/2019
 Binnie	Hickisson	Female	Green	1/17/2019
 Aylmar	Doog	Male	Purple	4/30/2019
 Audre	Salkild	Female	Indigo	2/11/2019
-Carce	Van	Rembrandt	2/23/2019	Male
 Gabriel	Caldecourt	Female	Purple	6/7/2019
 Ulrich	Jentgens	Male	Green	10/24/2019
 Briano	Tomaskunas	Male	Crimson	2/14/2019
@@ -677,7 +665,6 @@ Findley	Ducker	Male	Fuscia	1/29/2019
 Junina	Scorrer	Female	Mauv	2/23/2019
 Maddy	Warkup	Male	Puce	11/24/2019
 Burtie	Skelly	Male	Violet	12/3/2019
-Cherrita	De	Biasi	11/30/2019	Female
 Cynde	Sleightholme	Female	Violet	1/21/2019
 Marcello	Bentote	Male	Fuscia	8/14/2019
 Tracy	Whistlecroft	Male	Teal	7/17/2019
@@ -749,7 +736,6 @@ Willdon	Desseine	Male	Aquamarine	1/19/2019
 Andrei	Yateman	Female	Mauv	3/26/2019
 Drusilla	Gounin	Female	Aquamarine	2/9/2019
 Stevy	Thies	Male	Red	12/15/2018
-Justinian	Van	den	Male	Oord
 Marietta	Grisley	Male	Crimson	12/27/2018
 Kathryne	Lymbourne	Female	Yellow	3/6/2019
 Corrie	Semrad	Male	Puce	5/6/2019
@@ -868,7 +854,6 @@ Ebonee	Barnewelle	Female	Green	11/3/2019
 Pace	Streatley	Male	Maroon	11/3/2019
 Guthrie	Goodsall	Male	Red	8/27/2019
 Jeannie	Cumberbatch	Female	Mauv	6/6/2019
-Kingsley	Nunes	Nabarro	12/22/2018	Male
 Winnah	Comelini	Female	Fuscia	1/15/2019
 Carey	Hathaway	Female	Teal	4/6/2019
 Ingrim	Rantoul	Male	Mauv	2/21/2019
