@@ -29,19 +29,26 @@
 (defn sort-by-genderlast [data]
   (sort-by-gender (sort-by-last-ascending data)))
 
+;; date parsing utils
 (def custom-formatter (f/formatter "MM/dd/yyyy"))
 
 (defn formatdate [date]
   (f/parse custom-formatter date))
 
 (defn convert-time [row]
-  (let [dob (get row :dob)]
-    (formatdate dob)))
+  (try
+    (let [dob (get row :dob)]
+      (formatdate dob))
+    (catch IllegalArgumentException e
+      (println row)
+      (throw e))))
 
 (defn sort-by-dob [data]
   (sort-by convert-time data))
 
 (comment
+  (sort-by-genderlast)
+
   (sort-by-dob testdata)
 
 

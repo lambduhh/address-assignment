@@ -24,14 +24,16 @@
 
 (defn tab-separated? [txt]
   (let [chars (seq txt)]
-    (= 4 (count (filter #{\t} chars)))))
+    (= 4 (count (filter #{\tab} chars)))))                  ;str literal "\t" vs. char literal "\tab"
 
 
 ;test predicate functions on line
 (comment
-  (def txt (first (split-by-line comma)))
+  (def txt (first (split-by-line spaces)))
   (pipe-separated? txt)
   (comma-separated? txt)
+  (tab-separated? txt)
+
   )
 
 (defn line-based-dispatch-fn [line]
@@ -62,9 +64,6 @@
      :favcolor fcolor
      :dob      dob}))
 
-(defmethod process-line :error [line]
-  (throw (Exception. "Error in data :( check "
-                     line)))
 
 (defmethod process-line :space [line]
   (let [[last-name first-name gender fcolor dob] (str/split line #"\t")]
@@ -74,6 +73,12 @@
      :gender   gender
      :favcolor fcolor
      :dob      dob}))
+
+
+(defmethod process-line :error [line]
+  (throw (Exception. "Error in data :( check "
+                     line)))
+
 
 ; fn to transform data into a list of hash-maps
 (defn list-of-maps [txt]
