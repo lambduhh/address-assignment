@@ -17,25 +17,31 @@
                {:type :pipe, :last "Streak", :first "Elnore", :gender "Female", :favcolor "Mauv", :dob "2/23/2019"}
                {:type :pipe, :last "Tullis", :first "Annemarie", :gender "Female", :favcolor "Orange", :dob "7/25/2019"}])
 
+
 (defn sort-by-gender [data]
   (sort-by :gender data))
+
 
 (defn sort-by-last-ascending [data]
   (sort-by :last data))
 
+
 (defn sort-by-last-descending [data]
   (reverse (sort-by-last-ascending data)))
+
 
 (defn sort-by-genderlast [data]
   (sort-by-gender (sort-by-last-ascending data)))
 
 ;; date parsing utils
-(def custom-formatter (f/formatter "MM/dd/yyyy"))
+(def ^:private custom-formatter (f/formatter "MM/dd/yyyy"))
 
-(defn formatdate [date]
+
+(defn ^:private formatdate [date]
   (f/parse custom-formatter date))
 
-(defn convert-time [row]
+
+(defn ^:private convert-time [row]
   (try
     (let [dob (get row :dob)]
       (formatdate dob))
@@ -43,13 +49,6 @@
       (println row)
       (throw e))))
 
+
 (defn sort-by-dob [data]
   (sort-by convert-time data))
-
-(comment
-  (sort-by-genderlast)
-
-  (sort-by-dob testdata)
-
-
-  )

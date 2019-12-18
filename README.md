@@ -4,7 +4,42 @@ An assignment assigned to be completed at my address.. You could call it '*homew
 
 ## Usage
 
-FIX
+As command line:
+```bash 
+
+;; no sorting
+clj -m address-assignment.core f1 f2 ... fn
+
+;; sort by gender then by last name
+clj -m address-assignment.core -s genderlast f1 f2 ... fn
+
+;; sort by dob
+clj -m address-assignment.core -s dob f1 f2 ... fn
+
+;; sort by last name
+clj -m address-assignment.core -s last f1 f2 ... fn
+ 
+```
+
+As server:
+
+```bash 
+clj -m address-assignment.server 8000
+
+;; sorted by gedner
+curl http://localhost:8000/records/gender
+
+;; sorted by birthdate
+curl http://localhost:8000/records/birthdate
+
+;; sorted by lastname
+curl http://localhost:8000/records/name
+
+;; parse record line
+
+curl -X POST -H "Content-Type: application/json" -d '{"data": "Canto,Susann,Female,Teal,5/8/2019"}'
+```
+
 
 ## Assumptions
 For testing purposes I created sample data using [Mockaroo](https://mockaroo.com/).

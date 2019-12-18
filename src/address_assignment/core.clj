@@ -14,8 +14,7 @@
     (cond
       (= sort-type "genderlast") (o/sort-by-genderlast data)
       (= sort-type "dob") (o/sort-by-dob data)
-      (= sort-type "last") (o/sort-by-last-descending data))
-    ))
+      (= sort-type "last") (o/sort-by-last-descending data))))
 
 (defn app [args]
   (let [results (cond
@@ -29,9 +28,3 @@
 
 (defn -main [& args]
   (app args))
-
-(comment
-  (o/sort-by-dob (process-files ["resources/comma.txt" "resources/pipe.txt" "resources/tabs.txt"]))
-
-  )
-
