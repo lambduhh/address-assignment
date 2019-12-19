@@ -1,10 +1,11 @@
-(ns address-assignment.server
+(ns address-assignment.server-test
   (:require [clojure.test :refer :all]
-            [address-assignment.server :as s]))
+            [address-assignment.server :as s]
+            [cheshire.core :as json]))
 
 
 (deftest handlers
-  (is (= (greet {}) {:status  200
+  (is (= (s/greet {}) {:status  200
                      :body    "Hello, Welcome. Please specify an endpoint"
                      :headers {}}))
   (is (= (last (json/parse-string (s/gender {})))

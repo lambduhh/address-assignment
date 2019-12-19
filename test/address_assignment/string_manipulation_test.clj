@@ -1,4 +1,4 @@
-(ns address-assignment.string_manipulation_test
+(ns address-assignment.string-manipulation-test
   (:require [clojure.test :refer :all]
             [address-assignment.string-manipulation :as sm :reload true]))
 

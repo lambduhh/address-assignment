@@ -40,6 +40,10 @@ curl http://localhost:8000/records/name
 curl -X POST -H "Content-Type: application/json" -d '{"data": "Canto,Susann,Female,Teal,5/8/2019"}'
 ```
 
+Testing:
+```bash 
+clj -A:runner
+```
 
 ## Assumptions
 For testing purposes I created sample data using [Mockaroo](https://mockaroo.com/).
