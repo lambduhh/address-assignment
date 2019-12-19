@@ -17,11 +17,9 @@
       (= sort-type "last") (o/sort-by-last-descending data))))
 
 (defn app [args]
-  (let [results (cond
-                  (= (first args) "-s") (sorted-app (vec (rest args)))
-                  :else (process-files args)
-
-                  )]
+  (let [results (if (= (first args) "-s")
+                  (sorted-app (vec (rest args)))
+                  (process-files args))]
     (doseq [result results]
       (println result))))
 
