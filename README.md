@@ -25,7 +25,7 @@ As server:
 ```bash 
 clj -m address-assignment.server 8000
 
-# sorted by gedner
+# sorted by gender
 curl http://localhost:8000/records/gender
 
 # sorted by birthdate
