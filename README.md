@@ -35,7 +35,7 @@ curl http://localhost:8000/records/birthdate
 curl http://localhost:8000/records/name
 
 # parse record line
-curl -X POST -H "Content-Type: application/json" -d '{"data": "Canto,Susann,Female,Teal,5/8/2019"}'
+curl -X POST -H "Content-Type: application/json" -d '{"data": "Canto,Susann,Female,Teal,5/8/2019"}' http://localhost:8000/records
 ```
 
 Testing:
