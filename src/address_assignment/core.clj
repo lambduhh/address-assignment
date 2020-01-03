@@ -4,6 +4,7 @@
 
 
 (defn process-files [args]
+  ;; refactor this using a single threadlast macro
   (let [maps (map sm/list-of-maps (map slurp args))
         all-together-now (sm/combine-all maps)]
     all-together-now))
