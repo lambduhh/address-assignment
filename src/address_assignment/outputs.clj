@@ -2,6 +2,7 @@
   (:require [clj-time.core :as t]
             [clj-time.format :as f]))
 
+;; test data should be moved to test file
 (def testdata [{:type :pipe, :last "Chantrell", :first "Daryn", :gender "Female", :favcolor "Aquamarine", :dob "11/9/2019"}
                {:type :pipe, :last "Pabst", :first "Yasmin", :gender "Female", :favcolor "Aquamarine", :dob "2/8/2019"}
                {:type :pipe, :last "McCowen", :first "Rori", :gender "Female", :favcolor "Fuscia", :dob "3/16/2019"}
