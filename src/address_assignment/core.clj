@@ -2,12 +2,6 @@
   (:require [address-assignment.string-manipulation :as sm]
             [address-assignment.outputs :as o]))
 
-
-(defn process-files [file-names]
-  (->> file-names
-       (map slurp)
-       (mapcat sm/process-line)))
-
 (def which-sort
   {"genderlast" o/sort-by-genderlast
    "dob" o/sort-by-dob
@@ -32,7 +26,7 @@
         ;; file-names (:file-names argument-map)
         ;; sort-fn (:sort-fn argument-map)
 
-        data (process-files file-names)
+        data (mapcat sm/process-file file-names)
         results (sort-fn data)]
     (show-results results)))
 
