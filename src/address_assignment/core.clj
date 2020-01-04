@@ -4,10 +4,26 @@
 
 
 (defn process-files [args]
-  ;; refactor this using a single threadlast macro
-  (let [maps (map sm/list-of-maps (map slurp args))
-        all-together-now (sm/combine-all maps)]
-    all-together-now))
+  (->> args
+       (map slurp)
+       (map sm/process-line)
+       (apply concat)))
+
+
+(comment
+  (def args (range 10))
+  (map inc xs)
+  (->> xs
+       (map inc)
+       (filter even?)
+       (map str))
+  (let [a (map inc xs)
+        b (filter even? a)
+        c (map str b)]
+    c)
+  )
+
+
 
 (defn sorted-app
   [[sort-type & fnames]]
