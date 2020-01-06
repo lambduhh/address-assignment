@@ -2,44 +2,31 @@
   (:require [address-assignment.string-manipulation :as sm]
             [address-assignment.outputs :as o]))
 
+(def which-sort
+  {"genderlast" o/sort-by-genderlast
+   "dob" o/sort-by-dob
+   "last" o/sort-by-last-descending})
 
-(defn process-files [args]
-  (->> args
-       (map slurp)
-       (map sm/process-line)
-       (apply concat)))
+(defn process-args
+  [[farg sarg & rargs :as args]]
+  (if (= farg "-s")
+    {:sort-fn (which-sort sarg)
+     :file-names rargs}
+    {:sort-fn identity
+     :file-names rargs}))
 
-
-(comment
-  (def args (range 10))
-  (map inc xs)
-  (->> xs
-       (map inc)
-       (filter even?)
-       (map str))
-  (let [a (map inc xs)
-        b (filter even? a)
-        c (map str b)]
-    c)
-  )
-
-
-
-(defn sorted-app
-  [[sort-type & fnames]]
-  (let [data (process-files fnames)]
-    (cond
-      (= sort-type "genderlast") (o/sort-by-genderlast data)
-      (= sort-type "dob") (o/sort-by-dob data)
-      (= sort-type "last") (o/sort-by-last-descending data))))
-
-(defn app [args]
-  (let [results (if (= (first args) "-s")
-                  (sorted-app (vec (rest args)))
-                  (process-files args))]
-    (doseq [result results]
-      (println result))))
-
+(defn show-results
+  [results]
+  (doseq [result results] (println result)))
 
 (defn -main [& args]
-  (app args))
+  (let [{:keys [file-names sort-fn] :as argument-map} (process-args args)
+
+        ;; argument-map (process-args args)
+        ;; file-names (:file-names argument-map)
+        ;; sort-fn (:sort-fn argument-map)
+
+        data (mapcat sm/process-file file-names)
+        results (sort-fn data)]
+    (show-results results)))
+
